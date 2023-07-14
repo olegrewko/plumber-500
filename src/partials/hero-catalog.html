@@ -1,4 +1,4 @@
-
+<!-- 
 
 <div class="hero-catalog">
   <div class="container  hero-catalog__container">
@@ -52,7 +52,79 @@
         </div>
       </div>
       <div class="swiper-pagination hero-pag"></div>
-      <!-- <div class="swiper-pagination related-pag"></div> -->
+      <div class="swiper-pagination related-pag"></div>
     </div>
   </div>
 </div>
+-->
+<section class="search page-section">
+      <div class="container">
+        <div class="search__inner">
+          <div class="search__tabs tabs-wrapper">
+            <div class="mobile__overflow">
+              <a
+                class="search__tabs-item search__tabs-item--active"
+                href="#tab-1"
+                >Поиск по номеру</a
+              >
+              <a class="search__tabs-item" href="#tab-2">Поиск по марке</a>
+              <a class="search__tabs-item" href="#tab-3">Поиск по названию</a>
+            </div>
+            <div class="search__content">
+              <div
+                id="tab-1"
+                class="search__content-item search__content-item--active"
+                href="#"
+              >
+                <form action="" class="search__content-form">
+                  <input
+                    type="text"
+                    class="search__content-input"
+                    placeholder="Введите номер "
+                  />
+                  <button class="search__content-btn" type="submit">
+                    искать
+                  </button>
+                </form>
+              </div>
+              <div id="tab-2" class="search__content-item">
+                <form action="" class="search__content-form">
+                  <input
+                    type="text"
+                    class="search__content-input"
+                    placeholder="Введите марку "
+                  />
+                  <button class="search__content-btn" type="submit">
+                    искать
+                  </button>
+                </form>
+              </div>
+              <div id="tab-3" class="search__content-item" href="#">
+                <form action="" class="search__content-form">
+                  <input
+                    type="text"
+                    class="search__content-input"
+                    placeholder="Введите название товара "
+                  />
+                  <button class="search__content-btn" type="submit">
+                    искать
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script>
+    $('.search__tabs-item').on('click', function(e){
+
+        e.preventDefault();
+        $('.search__tabs-item').removeClass('search__tabs-item--active');
+        $('.search__content-item').removeClass('search__content-item--active');
+        $(this).addClass('search__tabs-item--active');
+        $($(this).attr('href')).addClass('search__content-item--active');
+
+  });
+</script>    
