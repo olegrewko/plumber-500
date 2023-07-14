@@ -1,12 +1,12 @@
 
 .hero{
-  padding-top: 40px;
-  background-color: #babdc4;
+  padding-top: 20px;
+  // background-color: #babdc4;
   &__slider{
     position: relative;
     overflow: hidden;
     width: 100%;
-    background-color: #babdc4;
+    // background-color: #babdc4;
 
 
   }
@@ -69,6 +69,56 @@
     z-index: 1;
    }
     }
+}
+
+/* ------------------------------------------ */
+.categories {
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.categories__inner {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.categories__item:hover .categories__item-title {
+
+color: #fff;
+transition: all .6s;
+}
+
+.categories__item-info {
+  width: 230px;
+  height: 70px;
+  margin: 5px;  
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  border-left: 3px solid #d93e39;
+}
+.categories__item:hover .categories__item-info {
+ 
+ 
+  background-color: #d93e39;   
+  transition: all .6s;
+
+}
+.categories__item-title {
+font-family: 'SF Pro Display', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+margin-left: 10px;
+color: #2F3035;
+transition: all .3s;
 }
 
  .banner-slider{

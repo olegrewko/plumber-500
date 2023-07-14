@@ -33,7 +33,7 @@ const catalogSlider = new Swiper(vars.$catalogSlider, {
 
 const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   pagination: {
     el: '.related-pag',

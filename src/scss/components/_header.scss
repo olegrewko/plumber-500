@@ -205,6 +205,9 @@
 //   }
   // ---------------------------------------------------------------------
   // ---------------------------------------------------------------------
+.header {
+    position: relative;
+}
 .header__top-b {
    display: flex;
    flex-wrap: wrap;
@@ -223,7 +226,7 @@
    font-weight: 700;
    min-height: 100px;
    margin-top: 20px; 
-   margin-bottom: 20px; 
+   margin-bottom: 10px; 
 }
   .menu__btn {
     display: inline-flex;
@@ -257,9 +260,10 @@
     width: 243px;
     box-shadow: 0px 0px 20px rgba(0, 0.2, 0.2, 0.2);
     transform: translateX(-100%);
+   
     transition: all 0.3s;
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     background-color: #fff;
 
 }
@@ -379,7 +383,8 @@ color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    // font-family: 'SF Pro Display';
+    font-weight: 700;
     font-size: 22px;
     font-weight: bold;
 }
@@ -490,7 +495,7 @@ border: 0px solid #000000;
 }
 
 .header__bottom {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }
 .menu__btn-line {
         width: 25px;
