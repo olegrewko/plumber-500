@@ -55,5 +55,29 @@ const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
     }
   }
 });
+const relatedSlider02 = new Swiper(vars.$cardRelatedSlider02, {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.related-pag',
+    type: 'bullets',
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+    },
+    576: {
+      slidesPerView: 4,
+    },
+    420: {
+      slidesPerView: 3,
+    },
+    380: {
+      slidesPerView: 2,
+    }
+  }
+});
 
 

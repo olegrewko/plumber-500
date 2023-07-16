@@ -14,6 +14,7 @@ import './components/stepper.js';
 import './components/color-select.js';
 import './components/card-slider.js';
 // import './components/stepper.js';
+import './components/jquery.rateyo.min.js';
 import './components/jquery.js';
 import './components/product.js';
 

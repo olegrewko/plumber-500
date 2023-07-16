@@ -1,14 +1,16 @@
 .product{
+  // max-width: 340px;
+  // width: 100%;
   display: block;
   border: 1px solid #eee;
   &__prop{
   font-family: 'SF Pro Display', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-color: #2F3035; 
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #2F3035; 
   //  color: rgb(18, 18, 18);
   //  color: rgb(160, 160, 160);
   }
@@ -61,12 +63,27 @@ color: #2F3035;
     text-transform: uppercase;
     color: var(--color-gray);
   }
-  &__title{
-    min-height: 23px;
-    // color: black;
+
+  &__brand{
     font-weight: 400;
     font-size: 10px;
     margin: 5px;
+    color: --color-tundora;
+    border-bottom: 0px solid #eee;
+  }
+  &__articule{
+    font-weight: 400;
+    font-size: 10px;
+    margin: 5px;
+    color: #d93e39;
+    border-bottom: 0px solid #eee;
+  }
+  &__title{
+    min-height: 33px;
+    color: --color-tundora;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 5px 0 10px 5px;
     a {
       &::before{
         content: "";
@@ -82,19 +99,19 @@ color: #2F3035;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin-left: 5px;
+    margin: 5px;
   }
   &__price{
     margin-bottom: 0px;
     color: black;
     // color: rgb(154, 156, 156);
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
   }
   &__oldprice{
-    margin-left: 10px;
+    margin-left: 5px;
     color: rgb(97, 98, 98);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     text-decoration: line-through;
 ;
