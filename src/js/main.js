@@ -19,20 +19,20 @@ import './components/jquery.js';
 import './components/product.js';
 
 // import 'simplebar/dist/simplebar.css';
-vars.$freeDeliveryBtn.addEventListener('click', (e) => {
-  e.currentTarget.closest('.free-delivery__btn').style.display = 'none';
-});
+// vars.$freeDeliveryBtn.addEventListener('click', (e) => {
+//   e.currentTarget.closest('.free-delivery__btn').style.display = 'none';
+// });
 
-if (document.querySelector('[data-bar]')) {
-  new SimpleBar(document.querySelector('.card-description__navigation'));
-}
+// if (document.querySelector('[data-bar]')) {
+//   new SimpleBar(document.querySelector('.card-description__navigation'));
+// }
 
-if (document.querySelector('.to-top')) {
-  document.querySelector('.to-top').addEventListener('click', (e) => {
-    e.preventDefault();
-    scrollTo(document.querySelector('.site-container'));
-  });
-}
+// if (document.querySelector('.to-top')) {
+//   document.querySelector('.to-top').addEventListener('click', (e) => {
+//     e.preventDefault();
+//     scrollTo(document.querySelector('.site-container'));
+//   });
+// }
 
 // $(function () {
 //   $('.menu__btn').on('click', function name() {
@@ -68,17 +68,17 @@ if (document.querySelector('.to-top')) {
 
 
 
-if (document.querySelector('.tab')) {
-  document.querySelector('.tab').addEventListener('click', (t) => {
+// if (document.querySelector('.tab')) {
+//   document.querySelector('.tab').addEventListener('click', (t) => {
 
-        t.preventDefault();
-        $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
-        $(this).addClass('tab--active');
-        $($(this).attr('href')).addClass('tabs-content--active');
+//         t.preventDefault();
+//         $($(this).siblings()).removeClass('tab--active');
+//         $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+//         $(this).addClass('tab--active');
+//         $($(this).attr('href')).addClass('tabs-content--active');
 
-  });
-}
+//   });
+// }
 
   // $('.search__tabs-item').on('click', function(e){
 
@@ -91,7 +91,7 @@ if (document.querySelector('.tab')) {
   // });
       
 
-        function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+    //     function myFunction() {
+    //     document.getElementById("myDropdown").classList.toggle("show");
 
-    }
+    // }

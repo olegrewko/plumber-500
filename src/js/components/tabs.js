@@ -12,35 +12,35 @@ document.addEventListener('DOMContentLoaded', () => {
 				tabsHandler(tabsPath);
 			}
 
-			if (e.target.classList.contains('tabs__arrow--prev')) {
-				let activeBtn = document.querySelector('.tabs__btn--active');
-				let activeParent = activeBtn.closest('.tabs__item');
-				let previousParent = activeParent.previousElementSibling;
+			// if (e.target.classList.contains('tabs__arrow--prev')) {
+			// 	let activeBtn = document.querySelector('.tabs__btn--active');
+			// 	let activeParent = activeBtn.closest('.tabs__item');
+			// 	let previousParent = activeParent.previousElementSibling;
 
-				if (previousParent) {
-					let prevActive = previousParent.querySelector('.tabs__btn')
-					tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
-					prevActive.classList.add('tabs__btn--active');
+			// 	if (previousParent) {
+			// 		let prevActive = previousParent.querySelector('.tabs__btn')
+			// 		tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
+			// 		prevActive.classList.add('tabs__btn--active');
 
-					let path = prevActive.dataset.tabsPath;
-					tabsHandler(path);
-				}
-			}
+			// 		let path = prevActive.dataset.tabsPath;
+			// 		tabsHandler(path);
+			// 	}
+			// }
 
-			if (e.target.classList.contains('tabs__arrow--next')) {
-				let activeBtn = document.querySelector('.tabs__btn--active');
-				let activeParent = activeBtn.closest('.tabs__item');
-				let nextParent = activeParent.nextElementSibling;
+			// if (e.target.classList.contains('tabs__arrow--next')) {
+			// 	let activeBtn = document.querySelector('.tabs__btn--active');
+			// 	let activeParent = activeBtn.closest('.tabs__item');
+			// 	let nextParent = activeParent.nextElementSibling;
 
-				if (nextParent) {
-					let nextActive = nextParent.querySelector('.tabs__btn');
-					tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
-					nextActive.classList.add('tabs__btn--active');
+			// 	if (nextParent) {
+			// 		let nextActive = nextParent.querySelector('.tabs__btn');
+			// 		tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
+			// 		nextActive.classList.add('tabs__btn--active');
 
-					let path = nextActive.dataset.tabsPath;
-					tabsHandler(path);
-				}
-			}
+			// 		let path = nextActive.dataset.tabsPath;
+			// 		tabsHandler(path);
+			// 	}
+			// }
 		});
 	}
 

@@ -79,18 +79,20 @@
      
         <div class="tabs-wrapper">
           <div class="tabs card__tab-box">
-            <a class="tab card-tabs" href="#tab-1">FAQ</a>
-            <a class="tab card-tabs" href="#tab-2" onclick="changeLink('Account ')">Account </a>
+            <a class="tab card-tabs tab--active" href="#tab-1">Характеристики</a>
+            <a class="tab card-tabs" href="#tab-2">Описание </a>
+            <a class="tab card-tabs" href="#tab-3">Отзывы </a>
+            <!-- <a class="tab card-tabs" href="#tab-2">Аккаунт </a> -->
         
-            <a class="tab card-tabs" href="#tab-4" onclick="changeLink('Addresses')">Addresses</a>
+            <a class="tab card-tabs" href="#tab-4">Магазины</a>
 
-            <a class="tab card-tabs" href="#tab-5" onclick="changeLink('Wishlist')">Wishlist</a>
-            <a class="tab card-tabs tab--active" href="#tab-6" onclick="changeLink('Cart')">Cart</a>
-            <a class="tab card-tabs" href="#tab-7" onclick="changeLink('Order')">Order</a>
+            <a class="tab card-tabs" href="#tab-5">Аккаунт</a>
+            <a class="tab card-tabs" href="#tab-6">Корзина</a>
+            <a class="tab card-tabs" href="#tab-7">Оплата</a>
           </div>
 
           <div class="tabs-container">
-            <div id="tab-1" class="card__tab-content tab-content">
+            <div id="tab-1" class="card__tab-content tab-content tab-content--active">
               <div class=" container-narrow">
               <h1 class="cabinet__title">Frequently Asked Questions.</h1>
               </div>
@@ -155,7 +157,347 @@
               </div>
             </div>
             <div id="tab-2" class="card__tab-content tab-content">
+               <!-- <div class=" container-narrow">
+              <h1 class="cabinet__title">My Account.</h1>
+              </div>
+                <div class="container contact-grid">
+
+                  <form class="contacts__form">
+                    <h3 class="account-detail__title">Login</h3>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Name
+                          </span>
+
+                    <input
+                      class="account-detail__input"
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your name"
+                    />
+
+                    </label>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Password
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="password"
+                      id="femail"
+                      name="firstemail"
+
+                    />
+                    </label>
+
+                    <label class="custom-checkbox account__label-remember ">
+                          <input class="custom-checkbox__input visually-hidden" type="checkbox" />
+                          <span class="custom-checkbox__text faq__text500">
+                          Remember me
+                          </span>
+                    </label>
+
+
+
+                    <input class="contacts__submit-hollow" type="submit" value="Login" />
+                    <a class="account-detail__error">Lost you password?</a>
+                  </form>
+
+                  <form class="contacts__form">
+                    <h3 class="account-detail__title">Register</h3>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Email
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your email"
+                    />
+                    </label>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Password
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="password"
+                      id="femail"
+                      name="firstemail"
+
+                    />
+                    </label>
+                     <label class="account__label-remember">
+                     
+                    </label>
+                    <input class="contacts__submit" type="submit" value="Register" />
+
+                  </form>
+                </div>
+
                <div class=" container-narrow">
+              <h1 class="cabinet__title">Account details</h1>
+              </div>
+
+              <div class="account-detail">
+    <h3 class="account-detail__title">Edit Account</h3>
+        <form class="account-detail__form">
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Name
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input-name" placeholder="First name" type="text" required />
+              <input class="account-detail__input-name" placeholder="Last name" type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Display name
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input" placeholder="olegrewko" type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Email address
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input" placeholder="olegrewko@gmail.com" type="text" required />
+              </div>
+            </label>
+
+        </form>
+        <hr class="account-detail__hr">
+    <h3 class="account-detail__title">Password change</h3>
+        <form class="account-detail__form">
+
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Current password
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input" type="password" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              New password
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input" type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Confirm password
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input" type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <div></div>
+              <div class="account-detail__input-wrap">
+              <input class="contacts__submit" type="submit" value="Send changes" />
+              </div>
+            </label>
+        </form>
+              </div> -->
+               <p class="black">
+                Главным преимуществом электродных котлов ЭОУ является
+                суперэкономичность, отличающая их от продукции ближайших
+                конкурентов. Инновационная запатентованная технология нагрева
+                жидкостей позволяет достичь высокий КПД до 99% (1 литр воды за
+                30 сек) дающая возможность обогрева помещений большой площади от
+                120 до 220 кв. метров (зависит от модели котла) от сети 380
+                вольт , потребляя значительно меньше электроэнергии ( в
+                зависимости от выбранного температурного режима работы). Мы
+                предлагаем электрокотёл с уникальными свойствами, превосходящими
+                в экономии электричества любые тэновые и индукционные котлы как
+                минимум на 30-40% и приближенным по своим экономическим и
+                эксплуатационным показателям к использованию газового
+                оборудования.
+              </p>
+            </div>
+            <div id="tab-3" class="card__tab-content tab-content">
+              content300
+            </div>
+            <div id="tab-4"
+              class="card__tab-content tab-content"
+            >
+              <div class=" container-narrow">
+              <h1 class="cabinet__title">Магазины</h1>
+              </div>
+
+              <div class="container ">
+
+    <section class="socialmap">
+      <div id="map" class="text-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.822174089799!2d37.61030017050038!3d55.757739672412825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a454f72f4ff%3A0x923352d5be7df67b!2z0KLQstC10YDRgdC60LDRjyDRg9C7LiwgNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2sua!4v1596189839076!5m2!1sru!2sua"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        >
+        </iframe>
+      </div>
+    </section>
+     <form>
+                <div class="card__top-line">
+                  <label class="card__label-search" for="">
+                    Магазин
+                    <input class="card__input-search" type="text" />
+                  </label>
+                  <label class="card__label-p" for="">
+                    <input type="radio" name="pickup" />
+                    Забрать сегодня
+                  </label>
+                  <label class="card__label-p" for="">
+                    <input type="radio" name="pickup" checked />
+                    Забрать в течение недели
+                  </label>
+                </div>
+                <ul class="card__list">
+                  <li class="card__list-item card__list-item--title">
+                    <div class="card__list-address card__list-address--title">
+                      Адрес
+                    </div>
+                    <div class="card__list-work card__list-work--title">
+                      Режим работы
+                    </div>
+                    <div class="card__list-a card__list-a--title">Доступно</div>
+                    <div class="card__list-n card__list-n--title">
+                      Количество
+                    </div>
+                    <div class="card__list-btn card__list-b--title">
+                      <button type="submit">Купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Москва, ул. Науки 25</div>
+                    <div class="card__list-work">
+                     <span>пн-сб: 08:00-19:00</span>
+                      <span>вс: 09:00-17:00</span>
+                    </div>
+                    <div class="card__list-a">В наличии</div>
+                    <div class="card__list-n">1</div>
+                    <div class="card__list-btn">
+                      <button type="submit">Купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Москва, ул. Южная 134</div>
+                    <div class="card__list-work">
+                      <span>пн-сб: 08:00-19:00</span>
+                      <span>вс: 09:00-17:00</span>
+                    </div>
+                    <div class="card__list-a">В наличии</div>
+                    <div class="card__list-n">2</div>
+                    <div class="card__list-btn">
+                      <button type="submit">Купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">
+                      Санкт-Петербург,<br />
+                      ул. Красная 19
+                    </div>
+                    <div class="card__list-work">
+                      <span>пн-сб: 08:00-19:00</span>
+                      <span>вс: 09:00-17:00</span>
+                    </div>
+                    <div class="card__list-a">Нет в наличии</div>
+                    <div class="card__list-n"></div>
+                    <div class="card__list-btn">
+                      <button type="submit">Купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Киев, ул Шевченко 167</div>
+                    <div class="card__list-work">
+                      <span>пн-сб: 08:00-19:00</span>
+                      <span>вс: 09:00-17:00</span>
+                    </div>
+                    <div class="card__list-a">Нет в наличии</div>
+                    <div class="card__list-n"></div>
+                    <div class="card__list-btn">
+                      <button type="submit">Купить</button>
+                    </div>
+                  </li>
+                </ul>
+              </form>
+
+    <!-- <div class="footer__top">
+      <div class="footer__column">
+        <div>
+          <h5>Melbourn office</h5>
+          <div class="about-grid__address">
+            <img class="about-grid__image" src="../img/map-point.png" alt="" />
+            <span>Little Bridht 45, Melbourne</span>
+          </div>
+
+          <div class="about-grid__tel">
+            <img class="about-grid__image" src="../img/smart.png" alt="" />
+            <span>8-999-852-58-21</span>
+          </div>
+
+          <div class="about-grid__email">
+            <img class="about-grid__image" src="../img/email.png" alt="" />
+            <span>olegrewko@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__column">
+        <div>
+          <h5>Sidney office</h5>
+          <div class="about-grid__address">
+            <img class="about-grid__image" src="../img/map-point.png" alt="" />
+            <span>Little Bridht 45, Melbourne</span>
+          </div>
+
+          <div class="about-grid__tel">
+            <img class="about-grid__image" src="../img/smart.png" alt="" />
+            <span>8-999-852-58-21</span>
+          </div>
+
+          <div class="about-grid__email">
+            <img class="about-grid__image" src="../img/email.png" alt="" />
+            <span>olegrewko@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__column">
+        <div>
+          <h5>Opening hours</h5>
+          <div class="about-grid__hours">
+            <span>Monday-Friday</span>
+            <span>10.00-20.00</span>
+          </div>
+          <div class="about-grid__hours">
+            <span>Saturday</span>
+            <span>10.00-18.00</span>
+          </div>
+          <div class="about-grid__hours">
+            <span>Sunday</span>
+            <span>Closed</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+            </div>
+ 
+             <div id="tab-5" class="card__tab-content tab-content">
+                 <div class=" container-narrow">
               <h1 class="cabinet__title">My Account.</h1>
               </div>
                 <div class="container contact-grid">
@@ -307,210 +649,10 @@
         </form>
               </div>
             </div>
-            <!-- <div id="tab-3" class="card__tab-content tab-content">
-              content300
-            </div> -->
-            <div
-              id="tab-4"
-              class="card__tab-content tab-content"
-            >
-              <div class=" container-narrow">
-              <h1 class="cabinet__title">Our stores</h1>
-              </div>
-
-              <div class="container ">
-
-    <section class="socialmap">
-      <div id="map" class="text-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.822174089799!2d37.61030017050038!3d55.757739672412825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a454f72f4ff%3A0x923352d5be7df67b!2z0KLQstC10YDRgdC60LDRjyDRg9C7LiwgNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2sua!4v1596189839076!5m2!1sru!2sua"
-          width="100%"
-          height="300"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        >
-        </iframe>
-      </div>
-    </section>
-
-
-    <div class="footer__top">
-      <div class="footer__column">
-        <div>
-          <h5>Melbourn office</h5>
-          <div class="about-grid__address">
-            <img class="about-grid__image" src="../img/map-point.png" alt="" />
-            <span>Little Bridht 45, Melbourne</span>
-          </div>
-
-          <div class="about-grid__tel">
-            <img class="about-grid__image" src="../img/smart.png" alt="" />
-            <span>8-999-852-58-21</span>
-          </div>
-
-          <div class="about-grid__email">
-            <img class="about-grid__image" src="../img/email.png" alt="" />
-            <span>olegrewko@gmail.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer__column">
-        <div>
-          <h5>Sidney office</h5>
-          <div class="about-grid__address">
-            <img class="about-grid__image" src="../img/map-point.png" alt="" />
-            <span>Little Bridht 45, Melbourne</span>
-          </div>
-
-          <div class="about-grid__tel">
-            <img class="about-grid__image" src="../img/smart.png" alt="" />
-            <span>8-999-852-58-21</span>
-          </div>
-
-          <div class="about-grid__email">
-            <img class="about-grid__image" src="../img/email.png" alt="" />
-            <span>olegrewko@gmail.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer__column">
-        <div>
-          <h5>Opening hours</h5>
-          <div class="about-grid__hours">
-            <span>Monday-Friday</span>
-            <span>10.00-20.00</span>
-          </div>
-          <div class="about-grid__hours">
-            <span>Saturday</span>
-            <span>10.00-18.00</span>
-          </div>
-          <div class="about-grid__hours">
-            <span>Sunday</span>
-            <span>Closed</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-            </div>
-            <div id="tab-5" class="card__tab-content tab-content">
-              <form>
-
-                <ul class="card__list">
-                  <li class="card__list-item card__list-item--title">
-                    <div class="card__list-address card__list-address--title">
-                      Product
-                    </div>
-                    <div class="card__list-work card__list-work--title">
-                      Description
-                    </div>
-                    <div class="card__list-a card__list-a--title">
-                      Price
-                    </div>
-                    <div class="card__list-n card__list-n--title">
-                      Status
-                    </div>
-                    <div class="card__list-a card__list-b--title">
-                      <!-- Cart -->
-                    </div>
-                    <div class="card__list-n card__list-b--title">
-                      <!--  -->
-                    </div>
-                  </li>
-                  <li class="card__list-item">
-                    <div class="card__list-address">
-                     <img src="../img/prod15.png" alt="../img/prod01.jpg" />
-                    </div>
-                    <div class="card__list-work">
-
-                        <h3 class="product__title">Eye Mesh Boat Shoes</h3>
-                     </div>
-                    <div class="card__list-a">
-                        <span class="product__price">$220.0</span>
-                    </div>
-
-
-                    <div class="card__list-n">1</div>
-                    <div class="card__list-a card__list-btn">
-                    <!-- <div class="card__list-btn"> -->
-                      <button type="submit">Add to cart</button>
-                    <!-- </div> -->
-                    </div>
-                    <div class="card__list-n">
-                      <img src="../img/close.png" alt="../img/close16.png" />
-                    </div>
-                  </li>
-                  <li class="card__list-item">
-                    <div class="card__list-address">
-                     <img src="../img/prod14.png" alt="../img/prod14.jpg" />
-                    </div>
-                    <div class="card__list-work">
-                      <h3 class="product__title">Eye Mesh Boat Shoes</h3>
-                    </div>
-                    <div class="card__list-a">
-                      <span class="product__price">$220.0</span>
-                    </div>
-                    <div class="card__list-n">
-                      3
-                    </div>
-                    <div class="card__list-a card__list-btn">
-                      <button type="submit">Add to cart</button>
-                    </div>
-                    <div class="card__list-n">
-                      <img src="../img/close.png" alt="../img/close16.png" />
-                    </div>
-                  </li>
-                  <li class="card__list-item">
-                    <div class="card__list-address">
-                      <img src="../img/prod12.png" alt="../img/prod02.jpg" />
-                    </div>
-                    <div class="card__list-work">
-                     <h3 class="product__title">Eye Mesh Boat Shoes</h3>
-                    </div>
-                      <div class="card__list-a">
-                      <span class="product__price">$220.0</span>
-                    </div>
-                    <div class="card__list-n">
-                      3
-                    </div>
-                    <div class="card__list-a card__list-btn">
-                      <button type="submit">Add to cart</button>
-                    </div>
-                    <div class="card__list-n">
-                      <img src="../img/close.png" alt="../img/close16.png" />
-                    </div>
-                  </li>
-                  <li class="card__list-item">
-                    <div class="card__list-address">
-                      <img src="../img/prod11.png" alt="../img/prod02.jpg" />
-                    </div>
-                    <div class="card__list-work">
-                      <h3 class="product__title">Eye Mesh Boat Shoes</h3>
-                    </div>
-                    <div class="card__list-a">
-                      <span class="product__price">$220.0</span>
-                    </div>
-                    <div class="card__list-n">
-                      3
-                    </div>
-                    <div class="card__list-a card__list-btn">
-                      <button type="submit">Add to cart</button>
-                    </div>
-                    <div class="card__list-n">
-                      <img src="../img/close.png" alt="../img/close16.png" />
-                    </div>
-                  </li>
-                </ul>
-              </form>
-
-            </div>
-            <div id="tab-6" class="card__tab-content tab-content tab-content--active">
-               <div class=" container-narrow">
+            <div id="tab-6" class="card__tab-content tab-content">
+               <!-- <div class=" container-narrow">
               <h1 class="cabinet__title">Cart</h1>
-              </div>
+              </div> -->
                 <form>
 
                 <ul class="card__list">
@@ -950,36 +1092,48 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
+      
     </section>
   </div>
 
 </section> 
 
       <div class="card-related">
-        <h2 class="card-related__title">Похожие</h2>
+        <h2 class="card-info__title">Похожие</h2>
         <div class="card-related__slider">
-          <div class="swiper-wrapper">
+           <div class="swiper-wrapper">
+
             <div class="swiper-slide">
               <article class="product">
-                <div class="product__image">
+                    <div class="product__image">
+                      <a href="../card.html">
+                      <img src="img/prod02.jpg" alt="img/prod11.png">
+                      </a>
+                    </div>
 
-                  <img src="img/prod04.jpg" alt="prod 4">
+                    <p class="light-grey product__title">
+
+                        Биметаллический радиатор Style Extra 500
+
+                    </p>
+                     <a class="rate">
+                <div id="rateYo" data-rateyo-rating="4"></div>
+              </a>
+              <p class="product__articule">Артикул: 342555</p>
+              <p class="product__brand">Производитель: Casar</p>
+                <div class="product__wrap">
+                <p class=" product__price">$120.0</p>
+                <p class=" product__oldprice">$220.0</p>
                 </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                <div class="product-custom">
-                  <div class="product-custom__price">
-                    <span class="product__price">$220.00</span>
-                    <span class="product__oldprice">$165.00</span>
-                  </div>
-                  <div class="product-custom__cart">
-                    <button class="btn-reset to-cart">Add to cart</button>
-                  </div>
+                <div class="product__content-box">
+                  <button
+                    class="btn-reset card-info__btn card-info__btn--towishlist"
+                  >
+                    Add to wishlist
+                  </button>
+                  <button class="btn-reset card-info__btn card-info__btn--tocart">
+                    Add to cart
+                  </button>
                 </div>
 
               </article>
@@ -987,94 +1141,139 @@
             <div class="swiper-slide">
               <article class="product">
                 <div class="product__image">
-
-                  <img src="img/prod03.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                 <div class="product-custom">
-                  <div class="product-custom__price">
-                    <span class="product__price">$220.00</span>
-                    <span class="product__oldprice">$165.00</span>
-                  </div>
-                  <div class="product-custom__cart">
-                    <button class="btn-reset to-cart">Add to cart</button>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="product">
-                <div class="product__image">
-
-                  <img src="img/prod02.jpg" alt="prod02">
-
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
                   <a href="../card.html">
-                    Eye Mesh Boat Shoes
+                  <img src="img/prod03.jpg" alt="img/kpr06.jpg">
                   </a>
-                </h3>
-                <div class="product-custom">
-                  <div class="product-custom__price">
-                    <span class="product__price">$220.00</span>
-                    <span class="product__oldprice">$165.00</span>
-                  </div>
-                  <div class="product-custom__cart">
-                    <button class="btn-reset to-cart">Add to cart</button>
-                  </div>
                 </div>
+
+                <h3 class="light-grey product__title">
+
+                    Котел отопительный КАРБО-18
+
+                </h3>
+                 <a class="rate">
+                <div id="rateYo" data-rateyo-rating="4"></div>
+              </a>
+              <p class="product__articule">Артикул: 342555</p>
+              <p class="product__brand">Производитель: Casar</p>
+                <div class="product__wrap">
+            <p class=" product__price">$120.0</p>
+            <p class=" product__oldprice">$220.0</p>
+            </div>
+            <div class="product__content-box">
+              <button
+                class="btn-reset card-info__btn card-info__btn--towishlist"
+              >
+                Add to wishlist
+              </button>
+              <button class="btn-reset card-info__btn card-info__btn--tocart">
+                Add to cart
+              </button>
+            </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="product">
+                <div class="product__image">
+                  <a href="../card.html">
+                  <img src="img/prod02.jpg" alt="prod02">
+                  </a>
+                </div>
+
+                <h3 class="light-grey product__title">
+
+                    Base Ventil
+
+                </h3>
+                 <a class="rate">
+                <div id="rateYo" data-rateyo-rating="4"></div>
+              </a>
+              <p class="product__articule">Артикул: 342555</p>
+              <p class="product__brand">Производитель: Casar</p>
+                <div class="product__wrap">
+            <p class=" product__price">$120.0</p>
+            <p class=" product__oldprice">$220.0</p>
+            </div>
+            <div class="product__content-box">
+              <button
+                class="btn-reset card-info__btn card-info__btn--towishlist"
+              >
+                Add to wishlist
+              </button>
+              <button class="btn-reset card-info__btn card-info__btn--tocart">
+                Add to cart
+              </button>
+            </div>
               </article>
             </div>
             <div class="swiper-slide">
               <article class="product">
                 <div class="product__image">
                   <span class="product__sale">Sale</span>
-                  <img src="img/prod08.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
                   <a href="../card.html">
-                    Eye Mesh Boat Shoes
+                  <img src="img/prod03.jpg" alt="prod 1">
                   </a>
-                </h3>
-                  <div class="product-custom">
-                  <div class="product-custom__price">
-                    <span class="product__price">$220.00</span>
-                    <span class="product__oldprice">$165.00</span>
-                  </div>
-                  <div class="product-custom__cart">
-                    <button class="btn-reset to-cart">Add to cart</button>
-                  </div>
                 </div>
+
+                <h3 class="light-grey product__title">
+
+                    Насос дренажный Unilift KP 250-A1 012H1800
+
+                </h3>
+                 <a class="rate">
+                <div id="rateYo" data-rateyo-rating="4"></div>
+              </a>
+              <p class="product__articule">Артикул: 342555</p>
+              <p class="product__brand">Производитель: Casar</p>
+                <div class="product__wrap">
+            <p class=" product__price">$120.0</p>
+            <p class=" product__oldprice">$220.0</p>
+            </div>
+            <div class="product__content-box">
+              <button
+                class="btn-reset card-info__btn card-info__btn--towishlist"
+              >
+                Add to wishlist
+              </button>
+              <button class="btn-reset card-info__btn card-info__btn--tocart">
+                Add to cart
+              </button>
+            </div>
               </article>
             </div>
             <div class="swiper-slide">
               <article class="product">
                 <div class="product__image">
-
-                  <img src="img/prod09.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
                   <a href="../card.html">
-                    Eye Mesh Boat Shoes
+                  <img src="img/prod04.jpg" alt="prod 1">
                   </a>
-                </h3>
-                  <div class="product-custom">
-                  <div class="product-custom__price">
-                    <span class="product__price">$220.00</span>
-                    <span class="product__oldprice">$165.00</span>
-                  </div>
-                  <div class="product-custom__cart">
-                    <button class="btn-reset to-cart">Add to cart</button>
-                  </div>
                 </div>
+
+                <h3 class="light-grey product__title">
+
+                    Котел отопительный ОК-15
+
+                </h3>
+                 <a class="rate">
+                <div id="rateYo" data-rateyo-rating="3"></div>
+              </a>
+              <p class="product__articule">Артикул: 342555</p>
+              <p class="product__brand">Производитель: Casar</p>
+                
+               <div class="product__wrap">
+            <p class=" product__price">$120.0</p>
+            <p class="line-through product__oldprice">$220.0</p>
+            </div>
+            <div class="product__content-box">
+              <button
+                class="btn-reset card-info__btn card-info__btn--towishlist"
+              >
+                Add to wishlist
+              </button>
+              <button class="btn-reset card-info__btn card-info__btn--tocart">
+                Add to cart
+              </button>
+            </div>
               </article>
             </div>
           </div>
@@ -1082,7 +1281,7 @@
         </div>
       </div>
       <div class="card-related"> 
-        <p class=" product__prop ">Рекомендуемые</p>
+        <p class=" card-info__title ">Рекомендуемые</p>
         <div class="card-related__slider02">
         
           <div class="swiper-wrapper">
@@ -1242,3 +1441,20 @@
     
   </div>
 </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        $(function () {
+
+        $('.tab').on('click', function (e) {
+        e.preventDefault();
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tab-content--active');
+          });
+
+        });
+  </script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="../js/jquery.rateyo.min.css" />
+  <link rel="stylesheet" href="../css/jquery.rateyo.min.css" />
