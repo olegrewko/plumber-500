@@ -34,22 +34,22 @@ import './components/product.js';
 //   });
 // }
 
-// $(function () {
-//   $('.menu__btn').on('click', function name() {
-//     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+$(function () {
+  $('.menu__btn').on('click', function name() {
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
 
 
-//   });
-// });
+  });
+});
 
-// $(function () {
-//   $('.nav__btn').on('click', function name() {
-//     $('.nav__list').toggleClass('nav__list--active');
+$(function () {
+  $('.nav__btn').on('click', function name() {
+    $('.nav__list').toggleClass('nav__list--active');
 
 
-//   });
-// });
-//  
+  });
+});
+ 
           
 
  $(document).ready(function () {

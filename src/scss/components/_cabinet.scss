@@ -1,10 +1,10 @@
 .cabinet {
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 0 10px;
   &__title{
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   &__grid{
      // max-width: 900px;
@@ -77,7 +77,7 @@
     justify-content: space-around;
     align-items: center;
 
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     border-bottom: 2px solid #eee;
      @include xs640 {
       display: block;
@@ -287,7 +287,7 @@ margin-left: auto;
 
 }
 .faq__left {
-  max-width: 590px;
+  max-width: 580px;
   width: 100%;
   padding: 5px;
       @include sm {
@@ -309,10 +309,13 @@ margin-left: auto;
       }
 }
 .faq__text500{
+      font-family: 'Jost';
       font-weight: 500;
       font-size: 12px;
-      color: rgb(99, 99, 99);
+      
       line-height: 1.7;
+
+    color: var(--color-gray);
                @include xs640 {
               width: 100%;
 
@@ -324,9 +327,10 @@ margin-left: auto;
             }
 }
 .faq__text800{
-      font-weight: 700;
+      font-family: 'Jost';
+      font-weight: 800;
       font-size: 12px;
-      color: rgb(67, 67, 67);
+      color: var(--color-dark);
       line-height: 1.7;
                @include xs640 {
               width: 100%;
@@ -337,6 +341,38 @@ margin-left: auto;
               width: 100%;
 
             }
+}
+.product-card__item {
+ display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+// width: 436px;
+border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+}
+
+
+.product-card__item-left {
+    /* min-width: 200px; */
+//     font-family: 'Jost';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 20px;
+// line-height: 44px;
+
+
+color: #2F3035; 
+}
+.product-card__item-right {
+    /* min-width: 200px; */
+//     font-family: 'Jost';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 20px;
+// line-height: 44px;
+
+color: #2F3035; 
 }
 .account {
   max-width: 900px;
