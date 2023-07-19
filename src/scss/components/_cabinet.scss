@@ -80,7 +80,13 @@
     margin-bottom: 50px;
     border-bottom: 2px solid #eee;
      @include xs640 {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0px 0;
+      margin-bottom: 10px;
     }
 }
 .card-tabs {
@@ -148,10 +154,9 @@
     color: var(--color-dark);
     padding: 2px 0;
     border-bottom: 0.5px solid #eee;
-    @include xs420 {
-      // display: block;
-      font-size: 5px;
-    line-height: 10px;
+    @include xs640 {
+      display: block;
+    
     }
 }
 .card__list-item--title {
@@ -532,9 +537,14 @@ color: #2F3035;
 .card__top-line {
 margin-bottom: 10px;
 display: flex;
-flex-wrap: wrap;
+
 justify-content: flex-start;
 align-items: center;
+    @include xs640 {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
 }
 .card__label-search {
 display: flex;
