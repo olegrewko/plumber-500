@@ -578,9 +578,11 @@
 }
 .card-related {
   padding-top: 10px;
+  padding-bottom: 20px;
+  
 
   &__title {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     // font-family: 'SF Pro Display', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -593,7 +595,7 @@
   &__slider {
     position: relative;
     overflow: hidden;
-    padding: 40px 0 30px 10px;
+    padding: 30px 0 40px 0px;
 
     // background-color: #eee;
   }
