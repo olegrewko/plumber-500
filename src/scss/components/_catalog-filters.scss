@@ -1,6 +1,6 @@
 .catalog-filters {
   padding-top: 30px;
-  max-width: 200px;
+  max-width: 220px;
   width: 100%;
   margin-right: 0px;
    @include sm {
@@ -49,7 +49,40 @@
 
     font-weight: 700;
     font-size: 12px;
-    text-transform: uppercase;
+       
+    font-size: 14px;
+    line-height: 30px;
+
+    color: #29292a;
+
+  }
+  &__title:hover {
+  
+    color: var(--color-tundora);
+    transition: all 0.3s;
+    cursor: pointer;
+
+  }
+  &__link {
+    display: block;
+    margin-left: 5px;
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: 12px;
+       
+    font-size: 14px;
+    line-height: 30px;
+
+    color: #29292a;
+    cursor: pointer;
+
+  }
+  &__link:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+    transition: all 0.3s;
+
   }
   &__caption {
     display: flex;
@@ -79,7 +112,7 @@
     justify-content: space-around;
   }
   &__items {
-    columns: 2;
+    columns: 1;
       @include sm {
       columns: 1;
   }
@@ -735,7 +768,7 @@
   margin-bottom: 20px;
   margin-right: 5px;
     @include xs {
-      display: none;
+      // display: none;
   }
   &__text{
     display: flex;
